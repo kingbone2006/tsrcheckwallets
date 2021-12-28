@@ -1,0 +1,23 @@
+Config tài khoản thẻ siêu rẻ của bạn và token captcha tại config/config.php
+Không lấy token captcha là không dùng được api !
+
+Để lấy token captcha vui lòng làm theo cách sau:
+Bước 1: Truy cập https://thesieure.com/account/login
+Bước 2: Giải captcha google có trên web
+Bước 3: Vào Developer Tools (bằng cách ấn F12 hoặc ấn tổ hợp Ctrl + Shift + i), sau đó ấn vào tab Console rồi dán đoạn mã này vào để lấy token:
+
+if (prompt('Token captcha của bạn ở bên dưới, hãy copy nó hoặc ấn OK để sao chép và dán vào config (chỉ dùng được sau khi đã giải captcha):', $("#g-recaptcha-response").val())) {navigator.clipboard.writeText($("#g-recaptcha-response").val()); alert('Đã sao chép token, vui lòng dán vào config !');}
+
+Bước 4: Xóa token cũ trong file config.php và dán token mới vào file và lưu
+Bước 5: Truy cập vào web để xem kết quả ;-)
+
+Lưu ý: + Nếu bạn share code này cho người khác thì nhớ xóa thông tin tài khoản thẻ siêu rẻ đi và trỏ web bạn vào tệp /delete_cookie.php để tránh bị mất tài khoản (có thể bật tự động xóa cookie trong config.php).
+       + Mỗi lần đổi tài khoản thẻ siêu rẻ đều phải trỏ web bạn vào tệp /delete_cookie.php để xóa cookie của tài khoản cũ rồi đăng nhập vào tài khoản mới tránh bị trùng tài khoản. Nếu không chuyển được tài khoản thì lại trỏ web vào tệp /delete_cookie.php lần nữa.
+
+Sử dụng /checkcode.php?code=mã giao dịch để kiểm tra thông tin mã giao dịch !
+
+Nhận tích hợp nạp bằng mã giao dịch tsr vào web, chi tiết liên hệ:
++ Facebook: https://www.facebook.com/skesoftware
++ Zalo: 0931562864
+
+Cảm ơn bạn đã dùng code này! Code bởi Vinh Developer - Ske Software
