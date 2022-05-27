@@ -18,6 +18,6 @@ Sử dụng /checkcode.php?code=mã giao dịch để kiểm tra thông tin mã 
 
 Nhận tích hợp nạp bằng mã giao dịch tsr vào web, chi tiết liên hệ:
 + Facebook: https://www.facebook.com/skesoftware
-+ Zalo: 0931562864
++ Zalo: 0584140866
 
 Cảm ơn bạn đã dùng code này! Code bởi Vinh Developer - Ske Software
